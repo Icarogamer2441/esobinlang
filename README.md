@@ -6,3 +6,32 @@ This esoteric language was created inspired by brainf**k and it has a very simpl
 
 ## playground
 you want to test the language without downloading it? here the link: https://icarogamer2441.github.io/esobinplay/ (the code you write in the playground is different from what you write in the original language made with python)
+
+### letters
+letters from a to z:
+1002
+1102
+111110002
+1110002
+111102
+111111002
+111111102
+1111111002
+111111110002
+11111111000002
+111111110000002
+1111111110000002
+1111111110002
+111111111002
+111111111000002
+111111111102
+1111111111002
+11111111110002
+111111111100002
+11111111111002
+111111111110002
+1111111111100002
+11111111111000002
+11111111111102
+1111111111110002
+1111111111110000002
