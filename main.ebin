@@ -3,8 +3,8 @@
 1111111002
 3 e
 111102
-3 ll
-11111111100000021111111110000002
+3 repeats the code 2 times and prints l 2 times
+421111111110000002
 3 o
 111111111000002
 3 space
@@ -22,4 +22,11 @@
 3 !
 11111111111110002
 3 new line
-1111111111111002
+3 repeats 9 times and increment 1 byte in bin1
+491
+3 repeats 4 times and increment 1 byte in bin1. 9 + 4 = 13. bin1 = 13
+441
+3 increments 2 bytes into bin0. bin1 = 13 and bin0 = 2 prints new line
+002
+
+3 added support for no content lines and repeats in version 1.1 of the language
