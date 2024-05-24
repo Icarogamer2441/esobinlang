@@ -22,11 +22,38 @@
 3 !
 11111111111110002
 3 new line
-3 repeats 9 times and increment 1 byte in bin1
+3 repeats 9 times and increment 1 in bin1 position
 491
-3 repeats 4 times and increment 1 byte in bin1. 9 + 4 = 13. bin1 = 13
+3 repeats 4 times and increment 1 in bin1 position. 9 + 4 = 13. bin1 = 13
 441
-3 increments 2 bytes into bin0. bin1 = 13 and bin0 = 2 prints new line
+3 increments 2 into bin0 position. bin1 = 13 and bin0 = 2 prints new line
 002
 
 3 added support for no content lines and repeats in version 1.1 of the language
+
+3 'your name > ' message
+1111111111110002
+111111111000002
+111111111110002
+11111111110002
+111111111111102
+111111111002
+1002
+1111111110002
+111102
+111111111111102
+1111111111111100000000002
+111111111111102
+3 repeats 2 times and increment 8 in bin1 pos (8 + 8 = 16)
+4211111111
+3 increments 3 on bin0 pos and bin1 16 + bin0 3 = input. putting the input in data pos 'a' (is from 'a' to 'k')
+0002a
+3 'hey (name)!' message
+1111111002
+111102
+1111111111110002
+111111111111102
+3 repeats 2 times and incremet 8 in bin1 two times and 3 in bin0 two times (8 + 8 = 16. 3 + 3 = 6)
+4211111111000
+3 prints the value of data por 'a' (the data pos that we put the input)
+2a
