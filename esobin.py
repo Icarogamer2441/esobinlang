@@ -139,6 +139,10 @@ def interpret(code):
                                 print("7", end="")
                             elif bin0[0] == 8:
                                 print("8", end="")
+                            elif bin0[0] == 9:
+                                print("9", end="")
+                            elif bin0[0] == 10:
+                                print("0", end="")
                         bin0[0] = 0
                         bin1[0] = 0
         except IndexError:
