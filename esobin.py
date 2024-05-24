@@ -3,6 +3,20 @@ import sys
 bin0 = [0]
 bin1 = [0]
 
+dataspos = {
+    "a": "",
+    "b": "",
+    "c": "",
+    "d": "",
+    "e": "",
+    "f": "",
+    "g": "",
+    "h": "",
+    "i": "",
+    "j": "",
+    "k": "",
+}
+
 def interpret(code):
     lines = code.split("\n")
 
@@ -122,6 +136,14 @@ def interpret(code):
                                 print("$", end="")
                             elif bin0[0] == 9:
                                 print("%", end="")
+                            elif bin0[0] == 10:
+                                print(">", end="")
+                            elif bin0[0] == 11:
+                                print("<", end="")
+                            elif bin0[0] == 12:
+                                print(":", end="")
+                            elif bin0[0] == 13:
+                                print(";", end="")
                         elif bin1[0] == 15:
                             if bin0[0] == 1:
                                 print("1", end="")
@@ -143,13 +165,24 @@ def interpret(code):
                                 print("9", end="")
                             elif bin0[0] == 10:
                                 print("0", end="")
+                        elif bin1[0] == 16:
+                            if bin0[0] == 3:
+                                datapos = tokens[-1]
+                                for data in dataspos:
+                                    if datapos == data:
+                                        dataspos[datapos] = input()
+                            elif bin0[0] == 6:
+                                datapos = tokens[-1]
+                                for data in dataspos:
+                                    if datapos == data:
+                                        print(dataspos[datapos])
                         bin0[0] = 0
                         bin1[0] = 0
         except IndexError:
             print("", end="")
 
 if __name__ == "__main__":
-    version = "1.1"
+    version = "1.2"
     if len(sys.argv) == 1:
         print(f"Usage: {sys.argv[0]} <command>")
         print("""commands:
