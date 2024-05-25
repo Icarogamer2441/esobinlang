@@ -15,6 +15,21 @@ dataspos = {
     "i": "",
     "j": "",
     "k": "",
+    "l": "",
+    "m": "",
+    "n": "",
+    "o": "",
+    "p": "",
+    "q": "",
+    "r": "",
+    "s": "",
+    "t": "",
+    "u": "",
+    "v": "",
+    "w": "",
+    "x": "",
+    "y": "",
+    "z": "",
 }
 
 def interpret(code):
@@ -31,6 +46,17 @@ def interpret(code):
                 for i in range(times):
                     finalcode = "".join(tokens[2:])
                     interpret(finalcode)
+            elif tokens[0] == "5":
+                datapos = tokens[1]
+                value = "".join(tokens[2:])
+                for data in dataspos:
+                    if datapos == data:
+                        dataspos[datapos] = value
+            elif tokens[0] == "6":
+                datapos = tokens[-1]
+                for data in dataspos:
+                    if datapos == data:
+                        interpret(dataspos[datapos])
             else:
                 for token in tokens:
                     if token == "1":
@@ -182,7 +208,7 @@ def interpret(code):
             print("", end="")
 
 if __name__ == "__main__":
-    version = "1.2"
+    version = "1.3"
     if len(sys.argv) == 1:
         print(f"Usage: {sys.argv[0]} <command>")
         print("""commands:
