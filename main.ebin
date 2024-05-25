@@ -57,3 +57,15 @@
 4211111111000
 3 prints the value of data por 'a' (the data pos that we put the input)
 2a
+
+3 saves the letter 'a' in data pos b (you can replace data pos a to other value too)
+5b1002
+3 prints the value of data pos 'b' in console
+6b
+3 new line
+3 repeats 9 times and increment 1 in bin1 position
+491
+3 repeats 4 times and increment 1 in bin1 position. 9 + 4 = 13. bin1 = 13
+441
+3 increments 2 into bin0 position. bin1 = 13 and bin0 = 2 prints new line
+002
